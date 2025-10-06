@@ -1,3 +1,15 @@
 html,body,#root { height: 100%; margin: 0; }
 body { background: #f8fafc; color: #0f172a; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
 code { background: rgba(15,23,42,0.05); padding: 2px 6px; border-radius: 4px; }
+
+.container { max-width: 1000px; margin: 32px auto; padding: 24px; background: #ffffff; border-radius: 12px; box-shadow: 0 6px 18px rgba(2,6,23,0.08); }
+.header { display:flex; justify-content:space-between; align-items:center }
+.controls { display:flex; gap:8px; align-items:center }
+.card { padding: 12px; border-radius: 8px; background: linear-gradient(180deg,#ffffff,#fbfdff); border: 1px solid #eef2f7 }
+.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin-top:12px }
+.workflow-title { font-weight:600 }
+.btn { padding: 8px 10px; border-radius:6px; border: none; cursor:pointer }
+.btn-primary { background:#2563eb; color:white }
+.btn-ghost { background:transparent; border:1px solid #e6eefc }
+.input, textarea { width:100%; padding:8px; border-radius:6px; border:1px solid #e6eefc; }
+.small { font-size:12px; color:#64748b }
