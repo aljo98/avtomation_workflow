@@ -8,7 +8,7 @@ function WorkflowCard({ wf, onRun, onExec }: { wf: Workflow; onRun: (id: string)
     <div className="card">
       <div className="workflow-title">{wf.name}</div>
       <div className="small">{wf.description}</div>
-      <div style={{marginTop:8, display:'flex', gap:8}}>
+      <div style={{ marginTop: 8, display: 'flex', gap: 8 }}>
         <button className="btn btn-primary" onClick={() => onRun(wf.id)}>Run</button>
         <button className="btn btn-ghost" onClick={() => onExec(wf.id)}>Executions</button>
       </div>
@@ -70,11 +70,11 @@ export default function App() {
       </div>
 
       {!token ? (
-        <div style={{marginTop:16}}>
+        <div style={{ marginTop: 16 }}>
           <div className="card">
             <h3>Auth</h3>
             <div className="small">Use register/login (prompts) to create a local user.</div>
-            <div style={{marginTop:8}}>
+            <div style={{ marginTop: 8 }}>
               <button className="btn btn-primary" onClick={async () => {
                 const email = prompt('email')
                 const password = prompt('password')
@@ -95,7 +95,7 @@ export default function App() {
           </div>
         </div>
       ) : (
-        <div style={{marginTop:16}}>
+        <div style={{ marginTop: 16 }}>
           <div className="card">
             <h2>Create workflow</h2>
             <input className="input" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
@@ -103,7 +103,7 @@ export default function App() {
             <textarea className="input" placeholder="Description" value={desc} onChange={e => setDesc(e.target.value)} />
             <br />
             <button className="btn btn-primary" onClick={create}>Create</button>
-            <button className="btn" style={{marginLeft:8}} onClick={fetchList}>Refresh</button>
+            <button className="btn" style={{ marginLeft: 8 }} onClick={fetchList}>Refresh</button>
           </div>
 
           <div className="grid">

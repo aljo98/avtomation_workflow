@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("avtomation-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60623642d84c1bc98ac9ba8c05ab6d6f22376c90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8f9e1ce1cdbd3d63dfb47074011db2361f9c53a")]
 [assembly: System.Reflection.AssemblyProductAttribute("avtomation-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("avtomation-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
