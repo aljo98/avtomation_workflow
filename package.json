@@ -1,0 +1,20 @@
+{
+  "name": "avtomation_workflow",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "npm install",
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "dev:backend-fastify": "cd apps/backend-fastify && npm run dev",
+    "dev:backend-php": "cd apps/backend-php && php -S 0.0.0.0:8080",
+    "dev:backend-dotnet": "cd apps/backend-dotnet && dotnet run",
+    "dev": "echo \"Run the services in separate terminals: npm run dev:frontend, npm run dev:backend-fastify (or backend-php/backend-dotnet)\""
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

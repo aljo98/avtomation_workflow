@@ -1,0 +1,14 @@
+{
+  "name": "avtomation-workflow-backend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/main.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
